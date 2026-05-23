@@ -26,17 +26,29 @@ font-size:28px;
 font-weight:bold;
 }
 
+nav{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:10px;
+}
 nav a{
-color:white;
-margin-left:20px;
 text-decoration:none;
+color:white;
+font-size:16px;
+margin:5px;
 }
 
 .hero{
-padding: 40px 20px;
+padding:30px 15px;
 width:100%;
 overflow:hidden;
-min-height:auto;
+text-align:center;
+}
+.hero h1{
+font-size:28px;
+line-height:1.2;
+text-align:center;
 }
 
 .btn{
@@ -228,7 +240,11 @@ margin:0;
 padding:0;
 overflow-x:hidden;
 }
-html, body{
+*{
+box-sizing:border-box;
+}
+
+body{
 margin:0;
 padding:0;
 overflow-x:hidden;
