@@ -322,6 +322,58 @@ max-width:100%;
 height:auto;
 display:block;
 }
+.hero{
+padding:50px 20px;
+text-align:center;
+background:linear-gradient(to right, #ff9a9e, #fad0c4);
+}
+
+.hero h1{
+font-size:26px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:16px;
+margin-bottom:15px;
+}
+
+.btn{
+display:inline-block;
+padding:10px 20px;
+background:#ff6b6b;
+color:white;
+border-radius:25px;
+text-decoration:none;
+}
+
+.features{
+text-align:center;
+padding:30px 15px;
+background:#f8f8f8;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#222;
+color:white;
+}
+
+.card{
+box-shadow:0 4px 12px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.card:hover{
+transform:scale(1.03);
+}
+.price{
+font-size:18px;
+font-weight:bold;
+color:#ff6b6b;
+margin:8px 0;
+}
 </style>
 </head>
 
@@ -366,36 +418,50 @@ display:block;
 </header>
 
 <section class="hero">
-<h1>Premium Quality Cookies</h1>
-<p>Delicious cookies at affordable price</p>
-<br>
-<a href="#products" class="btn">View Products</a>
+<h1>Freshly Baked Premium Cookies</h1>
+<p>Delicious, handmade cookies crafted with love and the finest ingredients.</p>
+<a href="#products" class="btn">Explore Products</a>
 </section>
 <section class="products" id="products">
-<div class="card" onclick="showProduct('Chocolate Khatai')">
+<section id="products" class="products">
+
+<div class="card">
 <img src="cookie1.jpg" class="product-img" loading="lazy">
-<h3>Chocolate Khatai</h3>
-<p>Delicious traditional sweet</p>
-<h4>₹250</h4>
-<button class="buy-btn">Buy Now</button>
+<h3>Chocolate Cookie</h3>
+<p>Rich and creamy chocolate flavor.</p>
+<p class="price">₹199</p>
+<button>Order Now</button>
 </div>
 
-<div class="card" onclick="showProduct('Jam Delight')">
+<div class="card">
 <img src="cookie2.jpg" class="product-img" loading="lazy">
-<h3>Jam Delight</h3>
-<p>Sweet & fruity cookies</p>
-<h4>₹299</h4>
-<button class="buy-btn">Buy Now</button>
+<h3>Choco Chip Cookie</h3>
+<p>Loaded with crunchy chocolate chips.</p>
+<p class="price">₹149</p>
+<button>Order Now</button>
 </div>
 
-<div class="card" onclick="showProduct('Mathi Namkeen')">
+<div class="card">
 <img src="cookie3.jpg" class="product-img" loading="lazy">
-<h3>Mathi Namkeen</h3>
-<p>Crispy & salty snack</p>
-<h4>₹200</h4>
-<button class="buy-btn">Buy Now</button>
+<h3>Premium Cookie</h3>
+<p>Perfect blend of taste and texture.</p>
+<p class="price">₹249</p>
+<button>Order Now</button>
 </div>
+
 </section>
+<section class="features">
+<h2>Why Choose Us</h2>
+<p>✔ Fresh Ingredients</p>
+<p>✔ Fast Delivery</p>
+<p>✔ Premium Quality</p>
+</section>
+</section>
+
+<footer>
+<p>© 2026 Cookie Store</p>
+<p>Contact: info@cookiestore.com</p>
+</footer>
 
 </body>
 </html>
