@@ -152,6 +152,23 @@ margin-top:10px;
 .buy-btn:hover{
 background:#c77dff;
 }
+.product-img{
+width:100%;
+height:150px;
+object-fit:cover;
+border-radius:10px;
+}
+
+.card{
+width:90%;
+margin:15px auto;
+}
+
+@media (max-width:600px){
+.card{
+width:90%;
+}
+}
 </style>
 </head>
 
@@ -203,7 +220,7 @@ background:#c77dff;
 </section>
 <section class="products" id="products">
 <div class="card" onclick="showProduct('Chocolate Khatai')">
-<img src="cookie1.jpg" width="100%">
+<img src="cookie1.jpg" class="product-img">
 <h3>Chocolate Khatai</h3>
 <p>Delicious traditional sweet</p>
 <h4>₹250</h4>
@@ -211,7 +228,7 @@ background:#c77dff;
 </div>
 
 <div class="card" onclick="showProduct('Jam Delight')">
-<img src="cookie2.jpg" width="100%">
+<img src="cookie2.jpg" class="product-img">
 <h3>Jam Delight</h3>
 <p>Sweet & fruity cookies</p>
 <h4>₹299</h4>
@@ -219,7 +236,7 @@ background:#c77dff;
 </div>
 
 <div class="card" onclick="showProduct('Mathi Namkeen')">
-<img src="cookie3.jpg" width="100%">
+<img src="cookie3.jpg" class="product-img">
 <h3>Mathi Namkeen</h3>
 <p>Crispy & salty snack</p>
 <h4>₹200</h4>
