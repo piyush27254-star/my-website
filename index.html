@@ -37,6 +37,8 @@ text-align:center;
 padding:100px;
 background:linear-gradient(135deg,#ff4d6d,#c77dff);
 color:white;
+width:100%;
+overflow:hidden;
 }
 
 .btn{
@@ -49,9 +51,9 @@ text-decoration:none;
 
 .products{
 display:flex;
-justify-content:center;
-gap:20px;
-padding:40px;
+flex-direction:column;
+align-items:center;
+width:100%;
 }
 
 .card{
@@ -155,13 +157,14 @@ background:#c77dff;
 }
 .product-img{
 width:100%;
-height:160px;
+height:180px;
 object-fit:cover;
 border-radius:12px;
 }
 
 .card{
 width:90%;
+max-width:320px;
 margin:15px auto;
 }
 
@@ -221,6 +224,11 @@ cursor:pointer;
 body{
 margin:0;
 padding:0;
+}
+html, body{
+margin:0;
+padding:0;
+overflow-x:hidden;
 }
 html, body{
 margin:0;
