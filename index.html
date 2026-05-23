@@ -155,9 +155,10 @@ background:#c77dff;
 }
 .product-img{
 width:100%;
-height:150px;
+height:180px;
 object-fit:cover;
-border-radius:10px;
+border-radius:15px;
+display:block;
 }
 
 .card{
@@ -180,6 +181,41 @@ border-radius:10px;
 .card{
 width:90%;
 margin:15px auto;
+}
+
+body{
+margin:0;
+padding:0;
+}
+.product-img{
+width:100%;
+height:180px;
+object-fit:cover;
+border-radius:15px;
+display:block;
+}
+
+.card{
+width:90%;
+margin:15px auto;
+overflow:hidden;
+border-radius:15px;
+}
+
+img{
+max-width:100%;
+height:auto;
+pointer-events:none;
+}
+
+button{
+padding:8px 15px;
+border:none;
+border-radius:20px;
+background:#ff6b6b;
+color:white;
+font-size:14px;
+cursor:pointer;
 }
 
 body{
@@ -237,7 +273,7 @@ padding:0;
 </section>
 <section class="products" id="products">
 <div class="card" onclick="showProduct('Chocolate Khatai')">
-<img src="cookie1.jpg" class="product-img">
+<img src="cookie1.jpg" class="product-img" loading="lazy">
 <h3>Chocolate Khatai</h3>
 <p>Delicious traditional sweet</p>
 <h4>₹250</h4>
@@ -245,7 +281,7 @@ padding:0;
 </div>
 
 <div class="card" onclick="showProduct('Jam Delight')">
-<img src="cookie2.jpg" class="product-img">
+<img src="cookie2.jpg" class="product-img" loading="lazy">
 <h3>Jam Delight</h3>
 <p>Sweet & fruity cookies</p>
 <h4>₹299</h4>
@@ -253,7 +289,7 @@ padding:0;
 </div>
 
 <div class="card" onclick="showProduct('Mathi Namkeen')">
-<img src="cookie3.jpg" class="product-img">
+<img src="cookie3.jpg" class="product-img" loading="lazy">
 <h3>Mathi Namkeen</h3>
 <p>Crispy & salty snack</p>
 <h4>₹200</h4>
